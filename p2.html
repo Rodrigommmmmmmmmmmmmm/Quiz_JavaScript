@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./p1.css">
+    <title>QuizJavaScript</title>
+</head>
+<body>
+    <fieldset>
+        <legend><fieldset class="fieldset1"><span class="quiz">Quiz JavaScript</span></fieldset></legend>
+        <div id="nomeinserido" class="nomeinserido"> </div>
+        <div id="tempo" class="tempo"></div>
+        <div class="div1">
+            <div id="informacao" class="informacao">
+                <p>Para passar de ano terá de ter no minimo 15 pontos cada pergunta terá 5 valores</p>
+                <p>Para cada pergunta tera 20 segundos</p>
+                <input type="text" id="nome" placeholder="Nome" > 
+            </div>
+            <div id='p1'>
+                <div class="perguntas">
+                <p>Qual é o operador lógico que representa "OU" em JavaScript?</p>
+              
+            </div>
+                
+                <ul>
+                    <li><button id="a1">&&</button></li>
+                    <li><button id="a2">||</button></li>
+                    <li><button id="a3">!</button></li>
+                    <li><button id="a4">//</button></li>
+                </ul>
+                
+            </div>
+            <div  id="p2">
+                <div class="perguntas">
+                <p>O que o método Array.prototype.push() faz em JavaScript?</p>
+                </div>
+               <ul>
+                <li><button id="b1">Remove o último elemento de um array.</button></li>
+                <li><button id="b2">Adiciona um elemento ao início de um array.</button></li>
+                <li><button id="b3">Adiciona um elemento ao final de um array.</button></li> 
+                <li><button id="b4">Inverte a ordem dos elementos em um array.</button></li>
+                </ul>
+                
+            </div>
+            <div id="p3">
+                <div class="perguntas">
+                <p>Qual é a diferença entre let e const em termos de declaração de variáveis em JavaScript?</p>
+                </div>  
+                <ul>              
+                <li><button id="c1">let é usado para constantes, enquanto const é usado para variáveis mutáveis.</button></li>
+                <li><button id="c2">let permite a reatribuição de valores, enquanto const não permite.</button></li>
+                <li><button id="c3">let é escopo global, enquanto const é escopo local.</button></li>
+                <li><button id="c4">let é usado para variáveis globais, enquanto const é usado para variáveis locais.</button></li>
+                </ul>
+                
+            </div>
+            <div  id="p4">
+                <div class="perguntas">
+                <p>O que é "callback hell" em JavaScript?</p>
+                </div>
+                <ul>
+                <li><button id="d1">Uma técnica para lidar com erros em chamadas de retorno assíncronas.</button></li>
+                <li><button id="d2"> Uma prática recomendada para organizar funções de retorno em um arquivo separado</button></li>
+                <li><button id="d3">Um padrão de design para estruturar funções assíncronas de forma mais legível.</button></li>
+                <li><button id="d4"> Uma situação em que várias chamadas de retorno aninhadas tornam o código difícil de ler e manter.</button></li>
+                </ul>
+                
+            </div>
+            <div  id="p5">
+                <div class="perguntas">
+                <p>Qual método JavaScript é usado para remover o último elemento de um array e retorná-lo?</p>
+                </div>
+                <ul>
+                <li><button id="e1">pop()</button></li>
+                <li><button id="e2">shift()</button></li>
+                <li><button id="e3">slice()</button></li>
+                <li><button id="e4">removeLast()</button></li>
+                </ul>
+            </div>
+
+            <div id="pontuacaoboa">
+                <p class="passou">MUITO BEM PASSOU DE ANO A SUA PONTUAÇÃO FOI DE <span id="pontos"></span>/25 PONTOS</p>
+                </div>
+
+            <div  id="pontuacaoma">
+                <p class="naopassou">OPS! NÃO PASSOU DE ANO A SUA PONTUAÇÃO FOI DE <span id="pontosmaus"></span>/25 PONTOS</p>
+            </div>
+                <span id="respostacerta" class="respostacerta">A SUA RESPOSTA ESTÁ CERTA!!</span>
+                <span id="respostaerrada" class="respostaerrada">A SUA RESPOSTA ESTÁ ERRADA!!</span>
+
+                <!-- tabela de alunos -->
+                <div id="tabelaalunos" class="tabelaalunos">
+                <table id="tabela" class="tabela">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Pontuação</th>
+                    </tr>
+                    
+                </table>
+                </div>
+            </div>
+            
+            <button id="comecar" class="comecar">Começar</button>
+            <button id="recomecar" class="recomecar">Novo Aluno</button>
+            <button id="mostraralunos" class="mostraralunos">Mostrar Alunos</button>
+    </fieldset>
+<script src="./p2.js"></script>
+</body>
+</html>
+
